@@ -1,0 +1,20 @@
+CREATE TABLE IF NOT EXISTS `wx` (
+  `wxid` varchar(100) NOT NULL default '',
+  `ts` int(32) NOT NULL default '0',
+  `wind` int(6) default NULL,
+  `windGust` int(6) default NULL,
+  `windLull` int(6) default NULL,
+  `windDir` int(6) default NULL,
+  `windDirGust` int(6) default NULL,
+  `windDirLull` int(6) default NULL,
+  `rain` int(6) default NULL,
+  `battery` int(6) default NULL,
+  `temperatureR` int(6) default NULL,
+  `temperatureH` int(6) default NULL,
+  `temperatureP` int(6) default NULL,
+  `pressure` int(6) default NULL,
+  `humidity` int(6) default NULL,
+  `timestamp` datetime default NULL,
+  `dewpoint` int(6) default NULL,
+  PRIMARY KEY  (`wxid`,`ts`)
+) ENGINE=MyISAM DEFAULT CHARSET=latin1;
